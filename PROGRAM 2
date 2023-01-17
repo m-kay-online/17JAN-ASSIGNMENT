@@ -1,0 +1,45 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+class function{
+public:
+int value1;
+float value2;
+int value3;
+char value4;
+
+int func(int value1){
+  this->value1=value1;
+}
+float func(float value2){
+
+this->value2=value2;
+
+}
+int func(int value1, int value3){
+  this->value1=value1;
+  this->value3=value3;
+}
+
+char func(char value4){
+  this->value4=value4;
+  
+}
+
+};
+
+int main(){
+function f;
+f.func(5);
+f.func(5.1);
+f.func(1,1);
+f.func('a');
+
+cout<<f.value1<<endl;
+cout<<f.value2<<endl;
+cout<<f.value3<<endl;
+cout<<f.value4<<endl;
+
+return 0;
+}
