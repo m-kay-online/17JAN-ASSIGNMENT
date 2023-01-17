@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+class function{
+    public:
+    void func(int i){
+        cout<<"Function : "<<i<<endl;
+    }
+    void func(int x, int y){
+        cout<<"Value of two integer: "<<x<<"and" <<y<<endl;
+    }
+    
+};
+
+class derived : public function{
+    
+};
+
+
+int main(){
+    derived f;
+    f.func(5);
+    f.func(5,7);
+}
