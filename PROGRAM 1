@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+class function{
+public:
+int value1 = 0;
+char value2;
+
+int func(int value1){
+  this->value1=value1;
+}
+char func(char value2){
+
+this->value2=value2;
+
+}
+
+};
+
+int main(){
+function f;
+f.func(5);
+f.func('A');
+
+cout<<f.value1<<endl;
+cout<<f.value2<<endl;
+
+return 0;
+}
