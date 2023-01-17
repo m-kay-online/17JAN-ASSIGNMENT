@@ -5,14 +5,14 @@ using namespace std;
 class function{
 public:
 int value1;
-float value2;
+double value2;
 int value3;
 char value4;
 
 int func(int value1){
   this->value1=value1;
 }
-float func(float value2){
+double func(double value2){
 
 this->value2=value2;
 
