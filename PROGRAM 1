@@ -3,7 +3,7 @@ using namespace std;
 
 class function{
 public:
-int value1 = 0;
+int value1;
 char value2;
 
 int func(int value1){
